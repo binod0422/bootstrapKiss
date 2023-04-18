@@ -10,16 +10,124 @@
 
 </head>
 <body>
-    <h1>Learning Bootstrap!</h1>
-    <p>Bootstrap is open-source css framework/library that makes the website responsible which is intended to be use on mobile</p>
-
-
-
-
-
-
-
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <img src="https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" height="200px" width="200px" alt="Lion 1" >
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="https://www.shutterstock.com/image-photo/african-male-lion-headshot-looking-260nw-1804041961.jpg" height="200px" width="200px" alt="Lion 2" ">
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="https://static01.nyt.com/images/2019/07/21/arts/23lionking1/21lionking-notebook2-videoSixteenByNineJumbo1600.jpg" height="200px" width="200px" alt="Lion 3" >
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="https://www.ladbible.com/cdn-cgi/image/width=1200,quality=70,format=jpeg,fit=contain,dpr=1/https%3A%2F%2Fs3-images.ladbible.com%2Fs3%2Fcontent%2F3cbdd78360f43af09ddc9bb13c5c4997.png" height="200px" width="200px" alt="Lion 4">
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="https://i.pinimg.com/736x/02/b7/d3/02b7d33ea616c46706e84fdc51ca7743.jpg" height="200px" width="200px" alt="Lion 5" >
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <img src="https://cdn.wallpapersafari.com/49/26/yxoO9e.jpg" height="200px" width="200px" alt="Lion 6">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Add table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Jack</td>
+            <td>the lion</td>
+            <td>JL@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>JT@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>LB@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+ 
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
